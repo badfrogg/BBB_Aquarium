@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src = "/socket.io/socket.io.js" > </script>
+    <script>
+    var socket = io.connect();
+    function updateSlider(value){
+        socket.emit('analogWrite', '{"pin":"P9_14", "value":' + value / 100 + '}');
+    }
+    </script>
+</head>
+
+<body>
+    <h2 style="font-size:20pt;">LED PWM</h2>
+    <input type="range" min="0" max="100" step="1" value="50" style="width: 130px;"
+ onchange="updateSlider(this.value)"/>
+</body>
+</html>

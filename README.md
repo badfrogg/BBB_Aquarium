@@ -9,13 +9,13 @@ Initial goals:
 The overall goal will be to expand the above scope to include multiple channels of lighting for sunrise and sunset effect along with moon phases and synced with real word sunrise/sunset, moonrise/moonset times.
 
 
-##Platform
+## Platform
 
 Hardware and software environment is:
-BeagleBone Black Ver. C
-Linux 9 (Stretch)
-Debian Image 2018-06-17
-Linux BeagleBone 4.14.52-ti-r60
+* BeagleBone Black Ver. C
+* Linux 9 (Stretch)
+* Debian Image 2018-06-17
+* Linux BeagleBone 4.14.52-ti-r60
 
 Preliminary Code is running in Node.js with the BoneScript library
-dependencies are socket.io
+* Dependencies are socket.io

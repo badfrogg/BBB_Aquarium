@@ -1,5 +1,3 @@
-// 09_02_led_pwm_server.js
-
 var app = require('http').createServer(handler);
 var io = require('socket.io').listen(app);
 var fs = require('fs');
@@ -27,7 +25,7 @@ function onConnect(socket) {
 
 function handleAnalogWrite(message) {
     var data = JSON.parse(message);
+    b.pinMode(data.pin, b.OUTPUT);
     b.analogWrite(data.pin, data.value,freq);
 }
-
 io.sockets.on('connection', onConnect);

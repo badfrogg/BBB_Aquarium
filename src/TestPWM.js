@@ -22,7 +22,7 @@ function updateDuty() {
 }
 
 function scheduleNextUpdate() {
-	// adjust duty by increment and reverse if it exceeds range of 0..1
+	// adjust duty by increment and decrement if it exceeds range of 0 to 100
 	duty = duty + increment;
 	if(duty < 0) {
 		duty = 0;

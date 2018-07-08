@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+<title>The Sun!</title>
+</head>
+
+<body>
+<h1>The Sun Has Opened!</h1>
+<h2>That Sun is {{ SunStatus }}</h2>
+</body>
+</html>

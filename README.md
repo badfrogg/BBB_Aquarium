@@ -1,6 +1,6 @@
 ## Preface
 I am using this project as a personal learning exercise as much as it is a real project with an end goal of being a fully functional device. I have very little experience with Linux, ARM processor architecture, and Node.js or JavaScript. This is also my first Git repository and I am also learning that as well.
-For anyone whom may come across this project please feel free to join in, offer advice or if you fine that you know even less that I do, It would be my pleasure to offer you whatever knowledge I can.
+For anyone who may come across this project please feel free to join in, offer advice or if you find that you know even less that I do, It would be my pleasure to offer you whatever knowledge I have.
 
 Thanks! Adam. aka, badfrogg
 

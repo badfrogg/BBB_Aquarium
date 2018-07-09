@@ -25,3 +25,7 @@ Hardware and software environment is:
 
 Preliminary Code is running in Node.js with the BoneScript library
 * Dependencies are socket.io
+
+### Credits
+I have studied and copied code from the following repositories in this project:
+* https://github.com/simonmonk/prog_bbb

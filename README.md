@@ -51,3 +51,5 @@ Example -``` http://192.168.1.103:8085/ ```
 ### Credits
 I have studied and copied code from the following repositories in this project:
 * https://github.com/simonmonk/prog_bbb
+
+![Pin Map]https://github.com/badfrogg/BBB_Aquarium/blob/master/beaglebone_black_pinmap.png

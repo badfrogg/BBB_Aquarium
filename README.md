@@ -44,7 +44,8 @@ npm install socket.io
 ````
 
 ## Usage
-Run  ```node PWM_Server.js``` and then browse to your BeagleBone Black IP address and include port :8085.
+Run  ```node PWM_Server.js``` and then browse to your BeagleBone Black IP address, include port :8085.
+
 Example -``` http://192.168.1.103:8085/ ```
 
 ### Credits

@@ -30,20 +30,18 @@ Preliminary Code is running in Node.js with the BoneScript library
 ## Installation
 PWM_Server.js and PWM.html need to be copied to the same directory in the BeagleBone Black. The dependency "socket.io should be installed in this directory as well. "PWM_Server.js" may need to be run with ```$ sudo node PWM_Server.js``` I have seen it throw errors that the period could not be written sometimes.
 
-Install Socket.IO:
-
-````sh
-cd /var/lib/cloud9
-npm install socket.io
-````
-
 Download files from GitHub to the BeagleBone Black:
 
 ````sh
 cd /var/lib/cloud9
 git clone git://github.com/badfrogg/BBB_Aquarium
 ````
+Install Socket.IO:
 
+````sh
+cd /var/lib/cloud9/badfrogg/BBB_Aquarium/src
+npm install socket.io
+````
 ### Credits
 I have studied and copied code from the following repositories in this project:
 * https://github.com/simonmonk/prog_bbb

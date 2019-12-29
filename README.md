@@ -39,7 +39,7 @@ git clone git://github.com/badfrogg/BBB_Aquarium
 Install Socket.IO:
 
 ````sh
-cd /var/lib/cloud9/badfrogg/BBB_Aquarium/src
+cd /var/lib/cloud9/BBB_Aquarium/src
 npm install socket.io
 ````
 

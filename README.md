@@ -42,6 +42,11 @@ Install Socket.IO:
 cd /var/lib/cloud9/badfrogg/BBB_Aquarium/src
 npm install socket.io
 ````
+
+## Usage
+Run  ```node PWM_Server.js``` and then browse to your BeagleBone Black IP address and include port :8085.
+Example - '''http://192.168.1.103:8085/ '''
+
 ### Credits
 I have studied and copied code from the following repositories in this project:
 * https://github.com/simonmonk/prog_bbb

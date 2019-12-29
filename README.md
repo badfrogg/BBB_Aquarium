@@ -27,10 +27,10 @@ Hardware and software environment is:
 Preliminary Code is running in Node.js with the BoneScript library
 * Dependencies are socket.io
 
-### Installation
+## Installation
 PWM_Server.js and PWM.html need to be copied to the same directory in the BeagleBone Black. The dependency "socket.io should be installed in this directory as well. "PWM_Server.js" may need to be run with ```$ sudo node PWM_Server.js``` I have seen it throw errors that the period could not be written sometimes.
 
-## Install Socket.IO:
+### Install Socket.IO:
 
 ````sh
 cd /var/lib/cloud9

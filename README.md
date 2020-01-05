@@ -34,6 +34,7 @@ I am providing these instructions mainly to myself as record. This also puts all
 * Burn the BeagleBone Black image ```Debian 9.9 2019-08-03 4GB SD IoT``` to SD card.
 Insert the card and power on the BeagleBone Black (BBB). Browse to the IP address of the BBB to enter into the Cloud 9 IDE.
 * (Optional) To flash the image to the eMMC edit the /boot/uEnv.txt
+
 ```cd /boot```
 
 ```sudo nano uEnv.txt```

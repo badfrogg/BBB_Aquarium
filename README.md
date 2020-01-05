@@ -50,7 +50,7 @@ Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-
 
 * Update examples in the Cloud9 IDE workspace:
 
-```debian@beaglebone:/var/lib/cloud9$ git pull```
+```/var/lib/cloud9$ git pull```
 
 * Update the boot-up scripts and Linux kernel:
 

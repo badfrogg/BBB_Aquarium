@@ -21,7 +21,7 @@ Hardware and software environment is:
 * BeagleBone Black: Ver. C
 * Debian GNU/Linux: 9.9 (Stretch)
 * Debian Image:     2019-08-03
-* Linux BeagleBone: 4.14.108-ti-r113
+* Linux BeagleBone: 4.14.108-ti-r124
 * Architecture:     arm
 
 Preliminary Code is running in Node.js with the BoneScript library

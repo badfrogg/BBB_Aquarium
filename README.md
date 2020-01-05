@@ -36,12 +36,12 @@ Download files from GitHub to the BeagleBone Black:
 cd /var/lib/cloud9
 git clone git://github.com/badfrogg/BBB_Aquarium
 ````
-Install Socket.IO:
-
-````sh
-cd /var/lib/cloud9/BBB_Aquarium/src
-npm install socket.io
-````
+//Install Socket.IO:
+//
+//````sh
+//cd /var/lib/cloud9/BBB_Aquarium/src
+//npm install socket.io
+//````
 
 ## Usage
 Run  ```node PWM_Server.js``` and then browse to your BeagleBone Black IP address, include port :8085.

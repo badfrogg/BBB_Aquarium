@@ -38,19 +38,29 @@ I am providing these instructions mainly to myself as record. This also puts all
 Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh``` and reboot. The flash process is automatic and you know it was successful after 10 minutes when the BBB has shutdown on its own. Remove the SD card before powering back on.
 * Update distribution components:
 ```/var/lib/cloud9$ sudo apt update```
+
 ```/var/lib/cloud9$ sudo apt upgrade```
+
 ```/var/lib/cloud9$ sudo apt install -y ti-tidl mjpg-streamer-opencv-python```
+
 * Update examples in the Cloud9 IDE workspace:
 ```/var/lib/cloud9$ cd /var/lib/cloud9```
+
 ```debian@beaglebone:/var/lib/cloud9$ git pull```
+
 * Update the boot-up scripts and Linux kernel:
 ```/var/lib/cloud9$ cd /opt/scripts```
+
 ```/opt/scripts$ git pull```
+
 ```/opt/scripts$ sudo tools/update_kernel.sh```
+
 * Shutdown and reboot
 ```/opt/scripts$ sudo shutdown -r now```
+
 * Test installed versions
 ```/var/lib/cloud9$ sudo /opt/scripts/tools/version.sh```
+
 
 
 ## Installation

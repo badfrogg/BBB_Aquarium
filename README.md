@@ -72,7 +72,7 @@ Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-
 
 ```sudo apt autoremove```
 
-```sudo apt-get clean
+```sudo apt-get clean```
 
 
 

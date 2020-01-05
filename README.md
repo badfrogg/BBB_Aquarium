@@ -68,6 +68,12 @@ Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-
 
 ```/var/lib/cloud9$ sudo /opt/scripts/tools/version.sh```
 
+* Clean Up
+
+```sudo apt autoremove```
+
+```sudo apt-get clean
+
 
 
 ## Installation

@@ -37,7 +37,7 @@ I am providing these instructions mainly to myself as record. This also puts all
 ```sudo nano uEnv.txt```
 Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh``` and reboot. The flash process is automatic and you know it was successful after 10 minutes when the BBB has shutdown on its own. Remove the SD card before powering back on.
 *Update distribution components:
-```/var/lib/cloud9$ sudo apt update``` 
+```/var/lib/cloud9$ sudo apt update```
 ```/var/lib/cloud9$ sudo apt upgrade```
 ```/var/lib/cloud9$ sudo apt install -y ti-tidl mjpg-streamer-opencv-python```
 *Update examples in the Cloud9 IDE workspace:

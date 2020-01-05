@@ -19,13 +19,39 @@ The overall goal will be to expand the above scope to include multiple channels 
 
 Hardware and software environment is:
 * BeagleBone Black: Ver. C
-* Debian GNU/Linux: 9.4 (Stretch)
-* Debian Image:     2018-06-17
-* Linux BeagleBone: 4.14.53-ti-r62
+* Debian GNU/Linux: 9.9 (Stretch)
+* Debian Image:     2019-08-03
+* Linux BeagleBone: 4.14.108-ti-r113
 * Architecture:     arm
 
 Preliminary Code is running in Node.js with the BoneScript library
 * Dependencies are socket.io
+
+## Setup Environment
+
+I am providing these instructions mainly to myself as record. This also puts all the steps that are scattered across the web in one place for me.
+
+* Burn the BeagleBone Black image ```Debian 9.9 2019-08-03 4GB SD IoT``` to SD card. Insert the card and power on the BeagleBone Black (BBB). Browse to the IP address of the BBB to enter into the Cloud 9 IDE.
+*(Optional) To flash the image to the eMMC edit the /boot/uEnv.txt
+```cd /boot```
+```sudo nano uEnv.txt```
+Uncomment the line at the end ```cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh``` and reboot. The flash process is automatic and you know it was successful after 10 minutes when the BBB has shutdown on its own. Remove the SD card before powering back on.
+*Update distribution components:
+```/var/lib/cloud9$ sudo apt update``` 
+```/var/lib/cloud9$ sudo apt upgrade```
+```/var/lib/cloud9$ sudo apt install -y ti-tidl mjpg-streamer-opencv-python```
+*Update examples in the Cloud9 IDE workspace:
+```/var/lib/cloud9$ cd /var/lib/cloud9```
+```debian@beaglebone:/var/lib/cloud9$ git pull```
+*Update the boot-up scripts and Linux kernel:
+```/var/lib/cloud9$ cd /opt/scripts```
+```/opt/scripts$ git pull```
+```/opt/scripts$ sudo tools/update_kernel.sh```
+*Shutdown and reboot
+```/opt/scripts$ sudo shutdown -r now```
+*Test installed versions
+```/var/lib/cloud9$ sudo /opt/scripts/tools/version.sh```
+
 
 ## Installation
 PWM_Server.js and PWM.html need to be copied to the same directory in the BeagleBone Black. The dependency "socket.io should be installed already by the BeagleBone image.
